@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 //if this particular '/' url is requested then run the function
 app.get('/article-one', function (req, res) {
-  res.send('hey there! this is article one...');
+  res.sendFile(path.join(__dirname, '', 'article-one.html'));
 });
 
 app.get('/article-two', function (req, res) {
