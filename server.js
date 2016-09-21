@@ -1,9 +1,22 @@
-var express = require('express');
-var morgan = require('morgan');
+var express = require('express');//library for create web server ports
+var morgan = require('morgan');//library for output logs
 var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+
+//if this particular '/' url is requested then run the function
+app.get('/article-one', function (req, res) {
+  res.sendFile('hey there! this is article one...');
+});
+
+app.get('/article-two', function (req, res) {
+  res.sendFile('hey there! this is article two...');
+});
+
+app.get('/article-three', function (req, res) {
+  res.sendFile('hey there! this is article three...');
+});
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
