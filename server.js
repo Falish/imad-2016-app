@@ -7,15 +7,15 @@ app.use(morgan('combined'));
 
 //if this particular '/' url is requested then run the function
 app.get('/article-one', function (req, res) {
-  res.sendFile('hey there! this is article one...');
+  res.send('hey there! this is article one...');
 });
 
 app.get('/article-two', function (req, res) {
-  res.sendFile('hey there! this is article two...');
+  res.send('hey there! this is article two...');
 });
 
 app.get('/article-three', function (req, res) {
-  res.sendFile('hey there! this is article three...');
+  res.send('hey there! this is article three...');
 });
 
 app.get('/', function (req, res) {
