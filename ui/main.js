@@ -7,16 +7,14 @@ function movedown(){
     element.style.marginTop = margin + 'px';
 }
 function moveup(){
-    margin = margin + 5;
+    margin = margin + 2;
     element.style.marginBottom = margin + 'px';
 }
 element.onclick = function(){
-    for(var i=0;i<7;i++){
-    var interval = setInterval(movedown,50);
-    }
-    for(var j=0;j<7;j++){
-        var interval1 = setInterval(moveup,50);
-    }
+   
+    var interval = setInterval(movedown,50,10);
+    var interval1 = setInterval(moveup,50,10);
+   
     
 };
 var element1 = document.getElementById('img1');
