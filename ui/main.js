@@ -9,12 +9,10 @@ function moveup(){
     element.style.marginBottom = margin + 'px';
 }
 element.onclick = function(){
-    for(var i=0;i<7;i++){
+    
     var interval = setInterval(movedown,50);
-    }
-    for(var j=0;j<7;j++){
-        var interval1 = setInterval(moveup,50);
-    }
+    
+    
     
 };
 var element1 = document.getElementById('img1');
