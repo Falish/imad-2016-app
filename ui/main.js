@@ -1,7 +1,7 @@
 console.log('Loaded!');
 //making a element of html move
 var element = document.getElementById('img');
-var margin = 2;
+var margin = 20;
 function movedown(){
     element.style.marginTop = margin + 'px';
 }
