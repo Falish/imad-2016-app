@@ -1,23 +1,17 @@
-console.log('Loaded!');
-//making a element of html move
-var element = document.getElementById('img');
-var margin = 0;
-function movedown(){
-    margin = margin + 5;
-    element.style.marginTop = margin + 'px';
-}
-function moveup(){
-    margin = margin + 2;
-    element.style.marginBottom = margin + 'px';
-}
-element.onclick = function(){
-   
-    var interval = setInterval(movedown,50,10);
-    var interval1 = setInterval(moveup,50,10);
-   
+var button = document.getElementById('counter');
+button.onclick = function(){
+    //create request
+    var request = new XMLHttpRequest();
     
-};
-var element1 = document.getElementById('img1');
-element1.onclick = function(){
-    element1.style.marginTop = '20px';
+    //capture response
+    request.onreadystatechange = function(){
+      if(request.readystate === XMLHttpRequest.DONE){
+          //take action
+          if(request.status === 200){
+              var counter = request.responseText;
+              var span = document.getElementById('count');
+              span.innerHTML = counter;
+          }
+      }  
+    };
 };
