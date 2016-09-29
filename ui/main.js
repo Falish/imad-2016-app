@@ -2,7 +2,7 @@ var button = document.getElementById('counter');
 button.onclick = function(){
     //create request
     var request = new XMLHttpRequest();
-    var counter=9;
+    
     //capture response
     request.onreadystatechange = function(){
       if(request.readyState === XMLHttpRequest.DONE){
@@ -10,7 +10,7 @@ button.onclick = function(){
           if(request.status === 200){
               var counter = request.responseText;
               var span = document.getElementById('count');
-              span.innerHTML = counter+1;
+              span.innerHTML = counter.toString();
           }
       }  
     };
