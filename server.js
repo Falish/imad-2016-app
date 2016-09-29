@@ -13,6 +13,9 @@ app.get('/article-one', function (req, res) {
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
 
 app.get('/article-three', function (req, res) {
   res.send('hey there! this is article three...');
@@ -21,7 +24,7 @@ app.get('/article-three', function (req, res) {
   res.send('hey there! this is article three...');
 });
 var counter=0;
-app.get('/ounter', function (req, res) {
+app.get('/counter', function (req, res) {
     counter+1;
   res.send(counter.toString());
 });
