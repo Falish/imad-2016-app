@@ -6,6 +6,13 @@ var app = express();
 app.use(morgan('combined'));
 
 //if this particular '/' url is requested then run the function
+var names = [];
+app.get('/submit', function (req, res) {
+    var name = req.query.name;
+    names.push(name);
+  res.send(JSON.stringyfy(names));
+});
+
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
@@ -32,12 +39,7 @@ app.get('/counter', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-var names = [];
-app.get('/submit', function (req, res) {
-    var name = req.query.name;
-    names.push(name);
-  res.send(JSON.stringyfy(names));
-});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
