@@ -47,6 +47,6 @@ button1.onclick = function(){
     //make request
     var name1 = document.getElementById('name');
     name = name1.value;
-    request1.open('GET','http://falish.imad.hasura-app.io/submit '+name,true);
+    request1.open('GET','http://falish.imad.hasura-app.io/submit-name?name='+name,true);
     request1.send(null);
 };
