@@ -36,7 +36,7 @@ var names = [];
 app.get('/submit', function (req, res) {
     var name = req.query.name;
     names.push(name);
-  res.send(JSON.stringyfy(names)));
+  res.send(JSON.stringyfy(names));
 });
 
 app.get('/ui/style.css', function (req, res) {
