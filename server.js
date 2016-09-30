@@ -7,10 +7,10 @@ app.use(morgan('combined'));
 
 //if this particular '/' url is requested then run the function
 var names = [];
-app.get('/submit-name?name=', function (req, res) {
+app.get('/submit-name', function (req, res) {
     var name = req.query.name;
     names.push(name);
-  res.send(JSON.stringyfy(names));
+  res.send(JSON.stringify(names));
 });
 
 app.get('/article-one', function (req, res) {
