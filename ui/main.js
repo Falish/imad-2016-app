@@ -21,17 +21,17 @@ button.onclick = function(){
 };
 
 //for list
-var button = document.getElementById('submit_btn');
-button.onclick = function(){
+var button1 = document.getElementById('submit_btn');
+button1.onclick = function(){
     //create request
-    var request = new XMLHttpRequest();
+    var request1 = new XMLHttpRequest();
     
     //capture response
-    request.onreadystatechange = function(){
-      if(request.readyState === XMLHttpRequest.DONE){
+    request1.onreadystatechange = function(){
+      if(request1.readyState === XMLHttpRequest.DONE){
           //take action
-          if(request.status === 200){
-              var names = request.responseText;
+          if(request1.status === 200){
+              var names = request1.responseText;
               names = JSON.parse(names);
               var list = '';
               for(var i=0;i<names.length;i++){
@@ -47,6 +47,6 @@ button.onclick = function(){
     //make request
     var name = document.getElementById('name');
     name = nameInput.value;
-    request.open('GET','http://falish.imad.hasura-app.io/submit'+name,true);
-    request.send(null);
+    request1.open('GET','http://falish.imad.hasura-app.io/submit'+name,true);
+    request1.send(null);
 };
