@@ -1,4 +1,4 @@
-var button = document.getElementById('counter');
+/*var button = document.getElementById('counter');
 button.onclick = function(){
     //create request
     var request = new XMLHttpRequest();
@@ -49,4 +49,4 @@ button.onclick = function(){
     name = nameInput.value;
     request.open('GET','http://falish.imad.hasura-app.io/submit'+name,true);
     request.send(null);
-};
+};*/
