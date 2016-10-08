@@ -15,10 +15,6 @@ app.get('/submit-name', function (req, res) {
 var i=0; 
 app.get('/article-one', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'Chicago.jpg'));
-    while(i<100)
-    {
-        i++;
-    }
     
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
