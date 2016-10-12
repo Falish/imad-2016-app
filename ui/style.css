@@ -47,14 +47,15 @@ body {
     opacity: 1;
 }
 .t {
-   
+   height:200px;
+   width:200px;
     position: relative;
     opacity: 1;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
-.t {
+.t:hover {
     transform: scale(1.5, 1.5);
     opacity: 1;
 }
