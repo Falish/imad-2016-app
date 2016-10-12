@@ -46,3 +46,14 @@ body {
     transform: scale(1.5, 1.5);
     opacity: 1;
 }
+.t {
+    position: relative;
+    opacity: 1;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.t {
+    font-size:50px;
+    opacity: 1;
+}
