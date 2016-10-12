@@ -26,12 +26,11 @@ body {
 
 .top {
     font-size: 30px;
-    border-color: red;
+    border-color:#00000;
     
-    padding-top:3px;
-    padding-bottom:3px;
+    padding:8px;
     background-color:red;
-    width:120px;
+    width:110px;
     
 }
 .imgh {
