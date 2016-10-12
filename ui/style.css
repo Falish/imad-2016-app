@@ -31,6 +31,8 @@ body {
     background-color:transparent;
     padding-top:10px;
     padding-bottom:2px;
+    position:absolute;
+    top:20%;
 }
 
 .top1 {
@@ -44,6 +46,9 @@ body {
 #q {
     font-size:100px;
     color:#1f2838;
+    position: absolute;
+    top : 10%;
+    left: 5%;
 }
 #main{
     width:150px;
