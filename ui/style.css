@@ -35,6 +35,8 @@ body {
 
 .top1 {
     margin:0px;
+    text-align:center;
+    top:2px;
 }
 #q {
     font-size:150px;
