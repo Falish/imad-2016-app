@@ -77,6 +77,7 @@ body {
     left : 40%;
 }
 .i {
+    background-color:transparent;
     width:350px;
     height:37px;
     font-size:25px;
