@@ -28,7 +28,7 @@ body {
     
     font-size: 25px;
      border: 1px solid #f90;
-    background-color:#ffffff;
+    background-color:transparent;
     padding-top:10px;
     padding-bottom:2px;
 }
@@ -37,13 +37,11 @@ body {
     margin:0px;
     padding-top:0px;
     padding-bottom:45px;
-    opacity: 0;
     top:2px;
 }
 #q {
     font-size:100px;
     color:#1f2838;
-    
 }
 #main{
     width:150px;
