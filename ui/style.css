@@ -39,12 +39,13 @@ body {
     top:2px;
 }
 #q {
-    font-size:150px;
+    font-size:100px;
     color:#1f2838;
+    padding-bottom:45px;
 }
 #main{
-    width:300px;
-    height:300px;
+    width:150px;
+    height:150px;
 }
 .btn-social {
     position: relative;
