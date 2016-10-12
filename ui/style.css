@@ -38,5 +38,15 @@ body {
    height:25px;
 }
 
+.btn-social {
+    width: 100px;
+    position: relative;
+    opacity: 0.5;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
 
-
+.btn-social:hover {
+    transform: scale(1.5, 1.5);
+    opacity: 1;
+}
