@@ -47,6 +47,8 @@ body {
     opacity: 1;
 }
 .t {
+    height:200px;
+    width:200px;
     position: relative;
     opacity: 1;
     transition: 0.3s ease;
@@ -54,6 +56,6 @@ body {
 }
 
 .t {
-    font-size:50px;
+    transform: scale(1.5, 1.5);
     opacity: 1;
 }
