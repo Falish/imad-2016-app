@@ -30,7 +30,7 @@ body {
     
     padding : 8px;
     background-color:cyan;
-    width:110px;
+    
     
 }
 .imgh {
@@ -38,8 +38,5 @@ body {
    height:25px;
 }
 
-.imgA {
-   width:25px;
-   height:25px;
-}
+
 
