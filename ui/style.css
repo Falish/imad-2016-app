@@ -25,9 +25,10 @@ body {
 }
 
 .top {
-    font-size: 30px;
-    border-color:#ffffff;
-    background-color:cyan;
+    font-size: 25px;
+    border-color:blue;
+    background-color:red;
+    padding:6px;
     
     
 }
