@@ -58,4 +58,8 @@ body {
     transform: scale(1.5, 1.5);
     opacity: 1;
 }
-
+.i {
+    width:150px;
+    height:150px;
+    margin:5px;
+}
