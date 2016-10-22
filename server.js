@@ -23,7 +23,9 @@ app.get('/article-two', function (req, res) {
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+app.get('/profile/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/profile', 'index.html'));
+});
 app.get('/article-three', function (req, res) {
   res.send('hey there! this is article three...');
 });
