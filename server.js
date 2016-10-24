@@ -16,6 +16,9 @@ var i=0;
 app.get('/article-one', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
+app.get('/index1.html', function (req, res) {
+    res.sendFile(path.join(__dirname, 'ui/profile', 'index1.html'));
+});
 
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
@@ -47,6 +50,18 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
+app.get('/ui/style1.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/profile/css', 'style1.css'));
+});
+app.get('/ui/animation.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/profile/js', 'animation.js'));
+});
+app.get('/ui/jquery.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/profile/js', 'jquery.js'));
+});
+app.get('/ui/validate.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/profile/js', 'validate.js'));
+});
 app.get('/ui/profile/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/profile/css', 'style.css'));
 });
